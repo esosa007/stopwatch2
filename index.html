@@ -13,17 +13,17 @@
 <body>
 
     <div class="container">
-        <div class="row">
-
-            <h1>Interval Timer</h1>
-            
-            <div>
-                <input id="timerInput" type="text" placeholder="Enter Interval in Seconds">
-                <button class="btn btn-success" id="startButton">Start</button>
-                <button class="btn btn-warning" id="stopButton">Stop</button>
-                <button class="btn btn-danger" id="resetButton">Reset</button>
-            </div>
-        
+        <div class="mt-5">
+            <input class="form-control" id="timerDisplay" placeholder="00:00" value="00:00">
+            <label for="intervalLength">Enter Interval length in Seconds:</label>
+            <input class="form-control mb-3" id="intervalLength" type="text" placeholder="0" value="60">
+            <label for="intervalNum">Enter # of Intervals:</label>
+            <input class="form-control mb-3" id="intervalNum" value="1" type="text">
+        </div>
+        <div>
+            <button class="btn btn-success" id="startButton">Start</button>
+            <button class="btn btn-warning" id="stopButton">Stop</button>
+            <button class="btn btn-danger" id="resetButton">Reset</button>
         </div>
     </div>
 
